@@ -1,0 +1,10 @@
+1 Hamburguer
+2 Pizza
+3 Batata Frita
+4 coxinha
+5 Macarrão na chapa
+6 strogonoff
+7 tropeiro
+8 Feijoada
+9 galinhada
+10 empadão
