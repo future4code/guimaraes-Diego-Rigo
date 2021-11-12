@@ -70,6 +70,8 @@ console.log("Sua idade em horas", "--",suaIdade * 365 * 24, "horas")
 
 //**** 4. ****
 
+/*
+
 let numeroUm = Number(prompt("Digite um numero:"))
 let numeroDois = Number(prompt("Digite outro numero"))
 
@@ -78,6 +80,158 @@ console.log("O primeiro numero é maior que segundo?", "--", numeroUm > numeroDo
 console.log("O primeiro numero é igual ao segundo?", "--", numeroUm === numeroDois)
 console.log("O primeiro numero é divisível pelo segundo?", "--", numeroUm % numeroDois === 0)
 console.log("O segundo numero é divisível pelo primeiro?", "--", numeroDois % numeroUm ===0)
+
+
+*/
+
+//1. 
+
+// a
+/*
+
+let grauF = 77
+
+let grauK = (grauF -32) *(5/9) + 273.15
+
+console.log(grauK)
+
+
+
+
+// b
+
+let grauC = 80
+
+let grauF = (grauC)*(9/5) +32
+console.log(grauF)
+
+
+
+//C 
+
+let grauC = 30
+
+let grauF = (grauC)*(9/5) +32 // Grau Fajerehdhe
+let grauK = (grauC -32) *(5/9) + 273.15 // Grau kelvin
+
+console.log(grauF)
+console.log(grauK)
+
+
+
+//D
+
+let grauC = Number(prompt("insira o valor em Celsius"))
+
+
+let grauF = (grauC)*(9/5) +32 // Grau Fajerehdhe
+let grauK = (grauC -32) *(5/9) + 273.15 // Grau kelvin
+
+console.log(grauF)
+console.log(grauK)
+
+
+
+
+//***2.***
+
+let quiloConsu = Number(prompt("Quantidade consumida de quilowatts"))
+
+// a
+
+let valorPago = quiloConsu * 0.05
+console.log("R$", valorPago)
+
+//b 
+
+let valorDesconto = Number(prompt("Qual o valor de desconto?"))
+
+let desconto = (valorDesconto / 100) * valorPago
+
+console.log(valorPago-desconto)
+
+
+
+//**3****
+
+//A
+
+let libra = 20
+
+let valorKilos = libra / 2.2046
+
+console.log("20lb equivalem a", valorKilos)
+
+
+
+
+//B
+
+let oz = 10.5
+
+let kilosOz = oz * 0.0283495 *10
+console.log(kilosOz)
+
+*/
+
+
+// C
+
+let milha = 100
+
+let milhasMetro = milha * 1609.34
+console.log(milhasMetro)
+
+// D
+
+let ft = 50
+
+let ftParaM = ft * 0.3048
+console.log(ftParaM)
+
+// E
+
+let gal = 103.56
+
+let galparaL = gal * 3.78541
+console.log(galparaL)
+
+// F 
+
+let xic = 450
+
+let xicLitros = xic * 0.24
+console.log(xicLitros)
+
+// G 
+
+let valoUsuario = Number(prompt("Qual o valor de xícaras?"))
+let convertido = valoUsuario * 0.24
+console.log(convertido)
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
