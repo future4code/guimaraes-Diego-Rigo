@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif, Arial, Helvetica;
+    
+}
+.header-Welcome{
+    background-color: #5a2d82;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    flex-direction: column;
+}
+.header-Welcome h1, p{
+    text-align: center;
+    color: azure;
+    text-transform: uppercase;
+}
+
+section{
+    height: 72vh;
+}
+.header-Nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header-Nav a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.section-Img img{
+    height: 200px;
+    width: 200px;
+
+}
+
+footer{
+    position: relative;
+    background-color: cadetblue;
+    bottom: 0;
+}
+.section-Frase{
+    color: red;
+    height: 33vh;
+}
+
+.footer-icons{
+    text-align: center;
+}
+
+.footer-icons img{
+    width: 2%;
+    height: 2%;
+}
+
+
+
+/*Pagina Add produtod*/
+
+.header-Welcome-Add{
+    background-color: #5a2d82;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-Welcome-Add p{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+}
+
+
+/*Controle de Estoque*/
+table{
+    margin-top: 20px;
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+table tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+
+}
+table tr td img{
+    height: 200px;
+    
+}
+
+table tr{
+    font-family: sans-serif;
+}
+table tr:hover{
+    background-color: #5a2d82;
+    color: white;
+}
