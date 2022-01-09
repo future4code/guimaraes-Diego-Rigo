@@ -22,8 +22,13 @@ input {
 }
 
 button:focus {
-    color: white;
+    color:white;
+    
 }
+button:hover{
+    background-color: #b67d32;
+}
+
 
 img {
     width: 50px;
@@ -34,7 +39,7 @@ div>p:first-child {
     display: inline;
 }
 
-div img {
+div img:active {
     background:none;
 }
 
