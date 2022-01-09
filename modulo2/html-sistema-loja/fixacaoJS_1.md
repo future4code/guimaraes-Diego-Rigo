@@ -1,4 +1,5 @@
-ˋˋˋjavascript
+ˋˋ`javascript
+
 function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
  // Escreva seu código aqui
   let salario = 2000 
@@ -8,3 +9,4 @@ function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
 }
 
 ˋˋˋ
+
