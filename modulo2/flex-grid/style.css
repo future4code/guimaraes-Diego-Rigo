@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+/* Configuração Header */
+
+header{
+    background-color: mediumvioletred;
+    
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo img{
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    padding-right:15px ;
+}
+
+.header-right{
+    padding-right: 15px;
+}
+
+.header-right button{
+    width: 45px;
+}
+
+
+
+/*Configuração Aside - Menu*/
+
+
+
+.section-article{
+    display: flex;
+    flex-direction: row; 
+    height: 570px; 
+    
+}
+
+.menu{
+    background-color: #f2d0e0; 
+    width: 22%;   
+    padding-top: 20px;
+}
+
+.menu-option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+    height: 30px;
+}
+
+.menu-option:hover{
+    background-color:mediumvioletred ;
+    cursor: pointer;
+}
+
+.menu-option img{
+    width: 20px;
+    height: 20px;
+}
+
+.nav-option{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav-option img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-option img{
+    padding-right: 10px;
+}
+
+
+/*Produtos da loja*/
+
+.box-produtos{
+    border: 2px solid black;
+    max-width: 180px;
+    height: 250px;
+    margin: 10px;
+}
+
+.box-produtos img{
+    width: 180px;
+    height: 125px;
+}
+
+.box-produtos h2, p{
+    text-align: center;
+}
+
+.produtos-loja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer{
+    height: 25%;
+    background-color: mediumvioletred;
+    text-align: center;
+}
