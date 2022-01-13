@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(https://uploads-ssl.webflow.com/5e790d30d198385b09366d8f/5eb17dfd4a07be86d2b8951e_Labenu_principal_slogan.png);
+    background-position:initial;
+    background-size:100vw;
+
+       
+}
+
+       
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: rgba(0, 0, 0, 0.521); 
+    height: 80px;
+    color: #fff;
+}
+
+.head h1{
+    margin-left: 10px;
+}
+
+.heade-search{
+    margin-right: 10px;
+    outline: 0;
+}
+
+
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+article div {
+    margin: 10px;
+}
+article div video:hover {
+    box-shadow:  0 0 1em rgb(230, 205, 205);
+    width: 320px;
+    transition:all 0.3s ease;
+    
+}
+
+div a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgba(0, 0, 0, 0.521); 
+    height: 80px;
+}
+
+footer h1{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+/*configuratio video*/
+
+.box-video{
+    text-align: center;
+    padding-bottom: 100px;
+
+}
+
+.box-video video source {
+    width: 800px;
+    height: 200px;
+    
+    
+}
+
