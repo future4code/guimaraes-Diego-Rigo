@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const CardProf = styled.div`
+const CardChat = styled.div`
   display: flex;
+  justify-content: flex-end;
   margin: 8px 0;
   padding: 0 8px;
   align-items: center;
@@ -19,8 +20,8 @@ height: 100vh;
 max-width: 50%;
 margin: auto;
 border: 1px solid black;
-display: flex;
-flex-direction: column-reverse;
+
+
 `
 const TextoLaranja = styled.p`
   color: black;
@@ -58,36 +59,43 @@ class App extends React.Component {
   };
 
   // Essa é a função que vai ser chamada nos botões de deletar dos cards
-  deletaBalaoChat = (idDoProfParaDeletar) => {
-    const copiaChat = [...this.state.chat];
 
-    const deletarChat = copiaChat.filter((prof) => {
-      return prof.id !== idDoProfParaDeletar;
-    });
 
-    this.setState({ chat: deletarChat });
-  };
+  deletaBalaoChat = (idChat) => {
+   const alert = window.confirm( 'Deseja deletar mensagem?')
+    if (alert === true){
+      const copiaChat = [...this.state.chat];
+      const deletarChat = copiaChat.filter((index) => {
+        return index.id !== idChat;
+      });
+
+      this.setState({ chat: deletarChat });
+    };
+   }
+   
 
   render() {
+
     const listaComponentes = this.state.chat.map((index) => {
       return (
-        <CardProf key={index.id}>
+        
+        <CardChat className="chatCard" key={index.id} 
+        onClick={() => this.deletaBalaoChat(index.id)}>
           <b>{index.usuario + ":  "}</b>
           <TextoLaranja>{index.mensagem}</TextoLaranja>
-           <button onClick={() => this.deletaBalaoChat(index.id)}>X</button> 
-        </CardProf>
+        </CardChat>
       );
     });
 
     return (
       <Arcticle>
           <SectioInput>
-          <input
+          <input 
             value={this.state.inputUsuario}
             onChange={this.guardaNome}
             placeholder="Usuário"
           />
-          <input
+          <input className="inputMsg"
             value={this.state.inputMensagem}
             onChange={this.guardaIdade}
             placeholder="Mensagem"
