@@ -1,0 +1,14 @@
+.arcticle{
+  background-color: antiquewhite;
+  height: 100vh;
+  max-width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.section_input{
+  position: absolute;
+  bottom: 0;
+}
+
