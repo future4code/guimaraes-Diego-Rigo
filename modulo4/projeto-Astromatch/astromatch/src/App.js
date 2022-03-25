@@ -15,7 +15,7 @@ const App = () => {
       case 'match':
         return <TelaMatch onChangeTelaPrincipal = {onChangeTelaPrincipal}/>
       default:
-        <p> Oppps! </p>;
+        <p> Algo deu errado! </p>;
     }
   }
 

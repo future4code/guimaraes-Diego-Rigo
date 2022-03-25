@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { DivContainer, DivCard, FotoPerfilImg, NomeP, IdadeP, BioP, DivBotoes, BtnInteracao, BtnVerMatches } from './StyledTelaPrincipal'
 
-export const url = `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/laine` 
+export const url = `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/diego` 
 
 const TelaPrincipal = (props) => {
   const [perfil, setPerfil] = useState([])
