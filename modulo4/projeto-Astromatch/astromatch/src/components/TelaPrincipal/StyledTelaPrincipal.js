@@ -7,7 +7,6 @@ export const DivContainer = styled.div`
   width: 30vw;
   background-color: #fff;
   border: 2px solid;
-  border-image: linear-gradient(90deg, #c20d7c, #ffbb00 100%) 1;
   @media screen and (max-width: 375px) {
         width: 300px;
   }
@@ -21,7 +20,7 @@ export const DivCard = styled.div`
 export const FotoPerfilImg = styled.img`
     width: 150px;
     height: 150px;
-    border: 1px solid pink;
+    border: 1px solid black;
     border-image: linear-gradient(90deg, #ffbb00, #c20d7c 100%) 1;
     @media screen and (max-width: 375px) {
         width: 100px;
@@ -34,7 +33,7 @@ export const NomeP = styled.p`
     font-size: 1.5rem;
     font-family: 'Dosis', sans-serif;
     font-weight: 900;
-    color: #c20d7c;
+    color: #Black;
     @media screen and (max-width: 375px) {
         font-size: 24px;
   }
@@ -77,7 +76,7 @@ export const BtnInteracao = styled.button`
 export const BtnVerMatches = styled.button`
     border: inherit;
     cursor: pointer;
-    color: #c20d7c;
+    color: #black;
     background: #ffbb00;
     @media screen and (max-width: 375px) {
         height: 50px;

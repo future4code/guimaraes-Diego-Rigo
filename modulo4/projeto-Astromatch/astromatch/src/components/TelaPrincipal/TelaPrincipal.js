@@ -7,14 +7,14 @@ export const url = `https://us-central1-missao-newton.cloudfunctions.net/astroMa
 const TelaPrincipal = (props) => {
   const [perfil, setPerfil] = useState([])
 
-  const pegaPerfil = () => {
+  const getProfile = () => {
     axios
       .get(`${url}/person`)
       .then((res) => setPerfil(res.data.profile))
       .catch((err) => console.log(err))
   }
 
-  useEffect(() => pegaPerfil(), [])
+  useEffect(() => getProfile(), [])
 
   const curtirPerfil = () => {
     const body = {
@@ -24,7 +24,7 @@ const TelaPrincipal = (props) => {
 
     axios
       .post(`${url}/choose-person`, body)
-      .then((res) => pegaPerfil())
+      .then((res) => getProfile())
       .catch((err) => console.log(err))
   }
 
@@ -36,7 +36,7 @@ const TelaPrincipal = (props) => {
 
     axios
       .post(`${url}/choose-person`, body)
-      .then((res) => pegaPerfil())
+      .then((res) => getProfile())
       .catch((err) => console.log(err))
   }
 
