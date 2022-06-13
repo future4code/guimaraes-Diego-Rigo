@@ -1,13 +1,16 @@
-export const listClient = [
+export type infoData = {
+    name: string,
+    cpf: string | number
+    //id: number,
+    data:number | string
+}
+
+export const listClient:infoData[] = [
     {
-        id: '',
-        infoCliente: [
-        {
-            nome: '',
-            cpf:'',
-            nascimento:'',
-        }
-    ]
-    
+       // id: 0,
+        name: '',
+        cpf:'',
+        data:'', 
+   
     }
 ] 

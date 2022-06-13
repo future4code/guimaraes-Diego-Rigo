@@ -1,7 +1,7 @@
 import express from 'express'
 import { Request, Response } from 'express'
 import cors from 'cors'
-import { listClient } from './data'
+import { infoData, listClient } from './data'
 
 const app = express()
 app.use(express.json())
@@ -15,22 +15,22 @@ app.get('/', (request: Request, response: Response) => {
 //Criar Novo cliente
 app.post('/create', (request: Request, response: Response) => {
     try{
-        const cliente = listClient.find((u) => u.id);
-
+       // const cliente = listClient.find((u) => u.id);
+    
         const name = request.body.name
         const cpf = request.body.cpf
-        const nascimento = request.body.nascimento
+        const data = request.body.data
         
-        const newClient = {
-            id: "",
-            nome:name,
+        const newClient:infoData = {
+            
+            name: name,
             cpf: cpf,
-            data:nascimento
+            data: data
         }
-    cliente.infoCliente.push(newClient);
+    listClient.push(newClient);
     response
         .status(201)
-        .send(`${newClient.nome}criado com sucesso!`);
+        .send(`${newClient.name}criado com sucesso!`);
 
     }catch (error:any){
         response.end(error.message)
