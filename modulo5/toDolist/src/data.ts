@@ -13,15 +13,15 @@ const populateUserTable = async (): Promise<void> => {
             ),
             (
                 '${uuidv4()}',
-                'Aline Vignoli',
-                'nyhvignoli',
-                'nyhv@gmail.com'
+                'Diego',
+                'diegorigo',
+                'riri@gmail.com'
             ),
             (
                 '${uuidv4()}',
-                'Dori',
-                'dori',
-                'dori@gmail.com'
+                'mashcal',
+                'mashcal',
+                'moreira@outlook.com'
             );
         `);
 
