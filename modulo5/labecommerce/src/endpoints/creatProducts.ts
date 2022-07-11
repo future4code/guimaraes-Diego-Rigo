@@ -6,7 +6,7 @@ import { creatProducts } from '../data/creatProducts';
 export const produtosCadastro = async (req: Request, res: Response) : Promise<void> => {
     let errorCode: number = 400;
     try {
-        const { 
+        const  { 
                 name, 
                 price, 
                 image_url} = req.body;
