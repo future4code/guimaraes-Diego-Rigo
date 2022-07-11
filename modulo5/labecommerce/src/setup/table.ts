@@ -1,5 +1,5 @@
 import {connection} from '../data/connection';
-import { USER_LABECOM } from './tableNames';
+import { USER_LABECOM, PRODUCT_NAME } from './tableNames';
 
 const createTables = async () => {
     try {
@@ -12,10 +12,17 @@ const createTables = async () => {
                 role enum('NORMAL','ADMIN') DEFAULT 'NORMAL'
             );
             
-          
+            CREATE TABLE ${PRODUCT_NAME} (
+                id VARCHAR(255) PRIMARY KEY,
+                name VARCHAR(64) NOT NULL,
+                price VARCHAR(255) NOT NULL,
+                image_url VARCHAR(255) NOT NULL,
+
         `);
 
-        console.log(`'${USER_LABECOM}' criada com sucesso"`);
+        
+
+        console.log(`'${USER_LABECOM}','${PRODUCT_NAME}'  criada com sucesso"`);
 
     } catch (error) {
         console.log();
